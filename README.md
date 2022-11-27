@@ -11,27 +11,27 @@ No additional prerequisites imposed by this Ansible role outside any dictated by
 Role Variables
 --------------
 
-* `punchr\_enabled`:
+* `punchr_enabled`:
    * Description: Whether to deploy and enable the punchr service or remove it.
    * Default value: `false`
-* `punchr\_ver`:
+* `punchr_ver`:
    * Description: Version of punchr client to deploy/enable.
    * Default value: `v0.9.0`
-* `punchr\_user`:
+* `punchr_user`:
    * Description: User to run Punchr client as.
    * Default value: `nobody`
-* `punchr\_base`:
+* `punchr_base`:
    * Description: Directory to install Punchr client under
    * Default value: `/usr/local`
-* `punchr\_home`:
+* `punchr_home`:
    * Description: Writable directory for Punchr state
    * Default value: `/var/run/punchr`
-* `punchr\_bin`:
+* `punchr_bin`:
    * Description: Format for the filename of the Punchr binary
-   * Default value: `punchr\_cli\_{{ ansible\_system | lower }}\_{{ arch\_table[ansible\_architecture]}}`
-* `punchr\_uri`:
+   * Default value: `punchr_cli_{{ ansible_system | lower }}_{{ arch_table[ansible_architecture]}}`
+* `punchr_uri`:
    * Description: URL to retrieve the Punchr binary from
-   * Default value: `https://github.com/dennis-tra/punchr/releases/download/{{ punchr\_ver }}/{{ punchr\_bin }}`
+   * Default value: `https://github.com/dennis-tra/punchr/releases/download/{{ punchr_ver }}/{{ punchr_bin }}`
 
 Dependencies
 ------------
