@@ -32,6 +32,9 @@ Role Variables
 * `punchr_uri`:
    * Description: URL to retrieve the Punchr binary from
    * Default value: `https://github.com/dennis-tra/punchr/releases/download/{{ punchr_ver }}/{{ punchr_bin }}`
+* `punchr_api_key`:
+   * Description: API key provided by the libp2p/punchr team (optional)
+   * Default value: none
 
 Dependencies
 ------------
